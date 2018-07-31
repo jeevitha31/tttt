@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Test_Paymentmodule>
+            <version>1.0.0</version>    
+        </Test_Paymentmodule>
+    </modules>
+   
+     <global>
+		  <blocks>
+            <test_paymentmodule>
+                <class>Test_Paymentmodule_Block</class>
+            </test_paymentmodule>
+            </blocks>
+        <models>
+            <test_paymentmodule>
+                <class>Test_Paymentmodule_Model</class>
+            </test_paymentmodule>
+        </models>
+   
+         <helpers>
+            <test_paymentmodule>
+                <class>Test_Paymentmodule_Helper</class>
+            </test_paymentmodule>
+        </helpers>
+       
+    </global>
+  <default>
+        <payment>
+            <test>
+                <active>1</active>
+                <model>test_paymentmodule/test</model>
+                <order_status>pending</order_status>
+                <title>test</title>
+                <allowspecific>0</allowspecific>
+              
+            </test>
+        </payment>
+    </default>
+</config>
+
+
